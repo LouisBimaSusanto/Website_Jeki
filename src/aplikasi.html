@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aplikasi.css">
+    <title>Zacky Ade Putra Harjuna</title>
+</head>
+<body>
+    <!--Navabar section-->
+    <header>
+        <nav class="nav-head">
+            <div class="logo">
+                <img src="/img/joystick.png" alt="Lgo game controller" class="logo-icon">
+                <span class="logo-text">Mabar</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here.." class="search">
+                <button class="menu-button">Search</button>
+            </div>
+
+            <div class="menu">
+                <img src="/img/bell.png" alt="Notification" class="menu-icon">
+                <img src="/img/tambah.png" alt="Add" class="menu-icon">
+            </div>
+        </nav>
+    </header>
+
+    <!--Button-->
+    <div class="button-container">
+        <a href="game.html" class="btn-link">
+            <button class="btn">Game</button>
+        </a>
+        <a href="aplikasi.html" class="btn-link">
+            <button class="btn active">Aplikasi</button>
+        </a>
+        <a href="anak-anak.html" class="btn-link">
+            <button class="btn">Anak - Anak</button>
+        </a>
+    </div>
+
+    <!--Games-->
+    <section class="trending-apps">
+        <h2>Aplikasi Yang Trending</h2>
+        <div class="carousel-container">
+            <button class="arrow left" onclick="scrollLeft(-1)">&#8249;</button>
+
+            <div class="app-list">
+                <!-- App Item 1 -->
+                <div class="app-item" style="background-image: url('/img/duolingo.png');">
+                    <div class="app-content">
+                        <img src="/img/duolingo.png" alt="Duolingo Logo" class="app-logo">
+                        <div class="app-text">
+                            <h4>Duolingo: Belajar Bahasa</h4>
+                            <p>Duolingo</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- App Item 2 -->
+                <div class="app-item" style="background-image: url('/img/capcut.png');">
+                    <div class="app-content">
+                        <img src="/img/logo_capcut.png" alt="CapCut Logo" class="app-logo">
+                        <div class="app-text">
+                            <h4>CapCut - Editor Video</h4>
+                            <p>Bytedance Pte. Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- App Item 3 -->
+                <div class="app-item" style="background-image: url('/img/canva.png  ');">
+                    <div class="app-content">
+                        <img src="/img/logo_canva.png" alt="Canva Logo" class="app-logo">
+                        <div class="app-text">
+                            <h4>Canva: Editor Video & Foto AI</h4>
+                            <p>Canva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+            <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+        </div>
+    </section>
+
+    <!--Game terbaru (lastets)-->
+    <section class="lastest-games">
+        <h2>Disarankan Untuk Anda</h2>
+        <div class="game-list">
+
+            <div class=" game-item">
+                <img src="/img/whatsapp.png" alt="Ini game terbaru ke-1">
+                <h4>Whatsapp</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/discord.png" alt="Ini game terbaru ke-2">
+                <h4>Discord</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/twitter.png" alt="Ini game terbaru ke-2">
+                <h4>Twitter</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/manuk.png" alt="Ini game terbaru ke-2">
+                <h4>Kiwi Browser</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/pick.png" alt="Ini game terbaru ke-2">
+                <h4>GitarTuna</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/instagram.png" alt="Ini game terbaru ke-2">
+                <h4>Instagram</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/netflik.png" alt="Ini game terbaru ke-2">
+                <h4>WebNovel</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/weebtoon.png" alt="Ini game terbaru ke-2">
+                <h4>Weebtoon</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

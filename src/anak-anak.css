@@ -1,0 +1,245 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #F2BCFF 0%, #ffffff 80%);
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.nav-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 45px;
+    margin-right: 10px;
+}
+
+.logo-text{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.search-bar{
+    flex-grow: 2;
+    padding: 0 20px;
+}
+
+.search {
+    width: 40%;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-button{
+    border-radius: 15px;
+}
+
+.menu-icon{
+    width: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    color: #333;
+    margin-left: 20px;
+}
+
+.game-list{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.game-item{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game img, .game-item img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game, .game-list, .game-item{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.featured h2{
+    margin-bottom: 10px;
+}
+
+.game-list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-item h4{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Add these styles for the carousel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-radius: 15px; /* Membuat tepi melengkung */
+}
+
+/* Style untuk carousel */
+.carousel-container {
+    display: flex;
+    justify-content: center; /* Untuk memusatkan carousel di dalam container */
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-radius: 15px; /* Membuat tepi melengkung */
+}
+
+.carousel{
+    display: flex;
+    justify-content: center; /* Untuk memusatkan elemen-elemen di dalam carousel */
+    align-items: center;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+/* Style untuk game-item */
+.game {
+    width: fit-content; /* Sesuaikan ukuran gambar agar mengisi lingkaran */
+    height: 100%; 
+    border-radius: 50%; /* Pastikan gambar juga bulat */
+    object-fit: cover; /* Agar gambar menyesuaikan dengan ukuran lingkaran tanpa distorsi */
+}
+
+.game img {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%; /* Membuat bentuk bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px; /* Lebar lingkaran */
+    height: 150px; /* Tinggi lingkaran sama dengan lebar */
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Agar gambar tidak keluar dari lingkaran */
+    margin: 0 10px;
+    object-fit: cover; /* Agar gambar tetap proporsional */
+}
+
+/* Style untuk judul game */
+.game h3, .game p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Tombol panah untuk menggeser carousel */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 2px solid #0077cc;
+    color: #0077cc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.arrow:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+/*Button section*/
+.button-container{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+.btn{
+    padding: 10px, 20px;
+    font-size: 16px;
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.active{
+    background-color: #b39ddb;
+    color: white;
+    border: 1px solid #5e35b1;
+}
+
+.btn:hover{
+    background-color: #e0f7fa;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .featured-games, .games-list {
+        flex-direction: column;
+    }
+
+    .carousel {
+        flex-direction: column;
+    }
+
+    .game, .game-item {
+        margin-bottom: 20px;
+    }
+}

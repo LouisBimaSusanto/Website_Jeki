@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zacky Ade Putra Harjuna</title>
+</head>
+<body>
+    <!--Navabar section-->
+    <header>
+        <nav class="nav-head">
+            <div class="logo">
+                <img src="/img/joystick.png" alt="Lgo game controller" class="logo-icon">
+                <span class="logo-text">Mabar</span>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here.." class="search">
+                <button class="menu-button">Search</button>
+            </div>
+
+            <div class="menu">
+                <img src="/img/bell.png" alt="Notification" class="menu-icon">
+                <img src="/img/tambah.png" alt="Add" class="menu-icon">
+            </div>
+        </nav>
+    </header>
+
+    <!--Button-->
+    <div class="button-container">
+        <a href="game.html" class="btn-link">
+            <button class="btn active">Game</button>
+        </a>
+        <a href="aplikasi.html" class="btn-link">
+            <button class="btn">Aplikasi</button>
+        </a>
+        <a href="anak-anak.html" class="btn-link">
+            <button class="btn">Anak - Anak</button>
+        </a>
+    </div>
+
+    <!--Games-->
+    <section class="featured">
+        <h2>Game Seru Lainnya</h2>
+        <div class="carousel-container">
+            <button class="arrow left" onclick="scrollLeft()">&#8249;</button>
+            <div class="featured-games carousel">
+                <div class="game">
+                    <img src="/img/game1.png" alt="ini gambar dari game">
+                    <h3>Age of Apes</h3>
+                    <p>Tap4fun (Hong Kong) Limited</p>
+                </div>
+                <div class="game">
+                    <img src="/img/game2.png" alt="Ini gambar dari game ke-2">
+                    <h3>Warthunder</h3>
+                    <p>Gaijin Entertaiment</p>
+                </div>
+                <div class="game">
+                    <img src="/img/game3.png" alt="Ini gambar dari game ke-3">
+                    <h3>Wutering Waves</h3>
+                    <p>HK KURO GAMES LIMITED</p>
+                </div>
+            </div>
+        </div>
+        <button class="arrow right" onclick="scrollRight()">&#8250;</button>
+    </section>
+
+    <!--Game terbaru (lastets)-->
+    <section class="lastest-games">
+        <h2>Game Asik Terbaru</h2>
+        <div class="game-list">
+
+            <div class=" game-item">
+                <img src="/img/game_4.png" alt="Ini game terbaru ke-1">
+                <h4>Genshin Impact</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_5.png" alt="Ini game terbaru ke-2">
+                <h4>Bluearchive</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_6.png" alt="Ini game terbaru ke-2">
+                <h4>Cat & Soup : Flufy Town</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_7.png" alt="Ini game terbaru ke-2">
+                <h4>Arknights</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_8.png" alt="Ini game terbaru ke-2">
+                <h4>Alto's Adventure</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_9.png" alt="Ini game terbaru ke-2">
+                <h4>Last Day on Earth: Survival</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_10.png" alt="Ini game terbaru ke-2">
+                <h4>Shadow Fight 4: Arena</h4>
+            </div>
+
+            <div class="game-item">
+                <img src="/img/game_11.png" alt="Ini game terbaru ke-2">
+                <h4>Goddess Paradise</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
